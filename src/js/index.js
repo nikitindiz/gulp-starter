@@ -1,21 +1,8 @@
-// // Browserify entry point for the page.js bundle (yay JavaScript!)
+var Ball = require('./ball');
 
-// var $ = require('jquery');
-// var _ = require('underscore');
-// // global.js already contains jQuery, so in our config.js file, we
-// // are exposing it to other files like this one in the `require` array.
-// // Also in config.js, jquery is listed in `external` array for this bundle.
-// // This combination lets this file use the jquery module bundled with
-// // global.js, instead of including it twice!
+myNewBall = new Ball();
 
-// var messageTemplate = _.template("<p class='love-letter'>Made with <%= feels %> at <a href='<%= url %>'><%= bestCompanyEvar %>!</a></p>");
+myNewBall.startBouncing();
 
-// var message = messageTemplate({
-//   bestCompanyEvar: 'Viget',
-//   feels: '♥',
-//   url: 'http://viget.com'
-// });
+myNewBall.stopBouncing();
 
-// $('body').append(message);
-
-console.log('page.js loaded!');
